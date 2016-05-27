@@ -1,11 +1,26 @@
 {
-  "name": "title-change-inactive-tab",
+  "name": "unfocused",
   "version": "0.1.0",
   "description": "Change your page title when the tab isnt focused",
   "main": "lib/index.js",
-  "author": "",
+  "author": "Sebastian Ekström",
   "license": "MIT",
   "devDependencies": {
     "coffee-script": "~1.9.2"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianekstrom/unfocused.git"
+  },
+  "keywords": [
+    "change page title",
+    "change page title unfocused"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebastianekstrom/unfocused/issues"
+  },
+  "homepage": "https://github.com/sebastianekstrom/unfocused#readme"
 }
