@@ -1,0 +1,11 @@
+{
+  "name": "title-change-inactive-tab",
+  "version": "0.1.0",
+  "description": "Change your page title when the tab isnt focused",
+  "main": "lib/index.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "~1.9.2"
+  }
+}
