@@ -9,7 +9,24 @@
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
-  <h1>Unfocused</h1>
+  <section class="section">
+    <h1>Unfocused</h1>
+    <h2>Change the title when your page isn't focused</h2>
+  </section>
+  <section class="section">
+    <h2>What does it do?</h2>
+    <p>Try it yourself, open a new tab and see how this browser tabs title changes</p>
+  </section>
+  <section class="section">
+    <h2>Installation</h2>
+    <p>Download it through npm</p>
+    <pre>
+      npm install unfocused --save
+      Unfocused = require('unfocused')
+      var unfocused = new Unfocused();
+      unfocused.init("I'm not focused!");
+    </pre>
+  </section>
 	<script src="dist/js/script.js"></script>
 </body>
 </html>
