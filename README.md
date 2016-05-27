@@ -1,15 +1,18 @@
-# page-title-change
+# Unfocused
 
 [Changelog](CHANGELOG.md)
 
 ## Installation
 
-Add the following to `package.json`:
-
+Install the package
 ```
-"dependencies": {
-  "page-title-change": "~0.1.0",
-}
+npm install unfocused --save-dev
+```
+Implement it
+```
+import Unfocused from 'unfocused'
+const unfocused = new Unfocused()
+unfocused.init('I miss you <3')
 ```
 
 ## Browser support
