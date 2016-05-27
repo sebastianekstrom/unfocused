@@ -1,0 +1,63 @@
+/**
+ * Sections
+ * -----------------------------------------------------------------------------
+ */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+ .section {
+   min-height: 85vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   pre {
+     line-height: 1.5;
+     background: #EF6B6F;
+     padding: 1em;
+     margin: 1em 0 0 0;
+   }
+
+   ul {
+      margin: 0;
+      padding: 0 1em;
+   }
+
+   &--main {
+     background: linear-gradient(to bottom, #fbd2c6 0%,#f6afa5 100%);
+     background: #ABE7DB;
+     color: #FFF;
+     height: 100vh;
+     text-align: center;
+
+     pre {
+       margin: 0;
+       background: #755261;
+       display: inline-block;
+       padding: 0.25em 1em;
+       border-radius: 3px;
+       font-size: 0.75rem;
+     }
+
+     h1 {
+      font-family: 'caroselloregular', serif;
+     }
+
+     h2 {
+       margin: 0;
+     }
+   }
+
+   &--primary {
+     background: #FDF9DE;
+     color: #FFF;
+     color: #755261
+   }
+
+   &--secondary {
+     background: #FD6E72;
+   }
+
+   &--tertiary {
+     background: #755261;
+   }
+ }

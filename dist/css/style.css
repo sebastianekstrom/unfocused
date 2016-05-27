@@ -10,6 +10,8 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -533,21 +535,18 @@ th {
  *      }
  *
  */
-.media-block,
-.media-block__body,
+
 .clearfix {
   *zoom: 1;
 }
 
-.media-block:before,
-.media-block__body:before,
+
 .clearfix:before {
   content: ' ';
   display: table;
 }
 
-.media-block:after,
-.media-block__body:after,
+
 .clearfix:after {
   content: ' ';
   display: table;
@@ -597,6 +596,20 @@ th {
  * Base site styling
  * -----------------------------------------------------------------------------
  */
+@font-face {
+  font-family: 'caroselloregular';
+  src: url("../../fonts/carosello-regular-webfont.woff2") format("woff2"), url("../../fonts/carosello-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aquinodemo';
+  src: url("../../fonts/aquino-demo-webfont.woff2") format("woff2"), url("../../fonts/aquino-demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -612,7 +625,13 @@ html {
 body {
   font-size: 16px;
   font-size: 1em;
-  font-family: "Helvetica Neue", "Helvetica", "Comic Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 ::-moz-selection {
@@ -694,6 +713,19 @@ body {
  */
 /* Headings
  * -------------------- */
+h1,
+.alpha {
+  font-weight: 400;
+  font-size: 7rem;
+  margin: 0;
+}
+
+h2,
+.beta {
+  font-weight: 100;
+  margin: 0;
+}
+
 /* Paragraphs and links
  * -------------------- */
 /* MiSC elements
@@ -710,114 +742,76 @@ body {
 }
 
 /**
- * The Media Block
- * -----------------------------------------------------------------------------
- * Courtesy of Nicole Sullivan. Demo: http://goo.gl/sCZKxk
- *
- * Usage:
- *
- *      <div class="media-block">
- *          <a href="http://some-url-com" class="media-block__image-container">
- *              <img src="http://placehold.it/50x50" alt="">
- *          </a>
- *          <div class="media-block__body">
- *              <h2>I'm a heading inside a media block</h2>
- *              <p>And some text inside it as well</p>
- *          </div>
- *      </div>
- */
-.media-block {
-  margin: 1em;
-}
-
-.media-block__image-container {
-  float: left;
-  margin-right: 1em;
-}
-
-.media-block__image-container img {
-  display: block;
-}
-
-/**
- * The Flag Block
- * -----------------------------------------------------------------------------
- * Courtesy of Harry Roberts. Demo: http://goo.gl/YR3ffA, http://goo.gl/4B3uFm
- *
- * Usage:
- *
- *      <div class="flag-block">
- *          <div class="flag__image">
- *              <img src="image.jpg" alt="">
- *          </div>
- *          <div class="flag__body">
- *              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
- *          </div>
- *      </div>
- *
- */
-.flag-block {
-  display: table;
-  width: 100%;
-}
-
-.flag__image {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.flag--top .flag__image {
-  vertical-align: top;
-}
-
-.flag--bottom .flag__image {
-  vertical-align: bottom;
-}
-
-.flag__image {
-  padding-right: 1em;
-}
-
-.flag__image > img {
-  display: block;
-  max-width: none;
-}
-
-.flag--rev .flag__image > img {
-  padding-right: 0;
-  padding-left: 1em;
-}
-
-.flag__body {
-  width: 100%;
-}
-
-/**
- * Forms
+ * Sections
  * -----------------------------------------------------------------------------
  */
-input[type=text],
-input[type=search],
-input[type=url],
-input[type=email],
-input[type=number],
-textarea {
-  width: 100%;
+.section {
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-textarea {
-  resize: vertical;
+.section pre {
+  line-height: 1.5;
+  background: #EF6B6F;
+  padding: 1em;
+  margin: 1em 0 0 0;
 }
 
-/* Layout
- * -------------------- */
-/**
- * Header
- * -----------------------------------------------------------------------------
- */
-/**
- * Footer
- * -----------------------------------------------------------------------------
- */
+.section ul {
+  margin: 0;
+  padding: 0 1em;
+}
+
+.section--main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbd2c6), to(#f6afa5));
+  background: -webkit-linear-gradient(top, #fbd2c6 0%, #f6afa5 100%);
+  background: linear-gradient(to bottom, #fbd2c6 0%, #f6afa5 100%);
+  background: #ABE7DB;
+  color: #FFF;
+  height: 100vh;
+  text-align: center;
+}
+
+.section--main pre {
+  margin: 0;
+  background: #755261;
+  display: inline-block;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.section--main h1 {
+  font-family: 'caroselloregular', serif;
+}
+
+.section--main h2 {
+  margin: 0;
+}
+
+.section--primary {
+  background: #FDF9DE;
+  color: #FFF;
+  color: #755261;
+}
+
+.section--secondary {
+  background: #FD6E72;
+}
+
+.section--tertiary {
+  background: #755261;
+}
 
 /*# sourceMappingURL=style.css.map */
