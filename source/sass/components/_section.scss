@@ -10,6 +10,10 @@
    align-items: center;
    justify-content: center;
 
+   &__content {
+     padding: 0 5em;
+   }
+
    pre {
      line-height: 1.5;
      background: #EF6B6F;
@@ -20,6 +24,22 @@
    ul {
       margin: 0;
       padding: 0 1em;
+      list-style: none;
+
+      li {
+        position: relative;
+        &:before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 5px;
+          position: absolute;
+          left: -1em  ;
+          background: #FDF9DE;
+          top: 50%;
+          margin-top: -4px;
+        }
+      }
    }
 
    &--main {

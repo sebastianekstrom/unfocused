@@ -761,6 +761,10 @@ h2,
           justify-content: center;
 }
 
+.section__content {
+  padding: 0 5em;
+}
+
 .section pre {
   line-height: 1.5;
   background: #EF6B6F;
@@ -771,6 +775,23 @@ h2,
 .section ul {
   margin: 0;
   padding: 0 1em;
+  list-style: none;
+}
+
+.section ul li {
+  position: relative;
+}
+
+.section ul li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  position: absolute;
+  left: -1em;
+  background: #FDF9DE;
+  top: 50%;
+  margin-top: -4px;
 }
 
 .section--main {
