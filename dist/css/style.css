@@ -746,7 +746,7 @@ h2,
  * -----------------------------------------------------------------------------
  */
 .section {
-  min-height: 85vh;
+  min-height: 55vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -759,10 +759,24 @@ h2,
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 40em) {
+  .section {
+    min-height: 85vh;
+    text-align: left;
+  }
 }
 
 .section__content {
-  padding: 0 5em;
+  padding: 3em 0;
+}
+
+@media only screen and (min-width: 40em) {
+  .section__content {
+    padding: 0 5em;
+  }
 }
 
 .section pre {
@@ -792,6 +806,13 @@ h2,
   background: #FDF9DE;
   top: 50%;
   margin-top: -4px;
+  display: none;
+}
+
+@media only screen and (min-width: 40em) {
+  .section ul li:before {
+    display: inline-block;
+  }
 }
 
 .section--main {
@@ -815,6 +836,13 @@ h2,
 
 .section--main h1 {
   font-family: 'caroselloregular', serif;
+  font-size: 4rem;
+}
+
+@media only screen and (min-width: 40em) {
+  .section--main h1 {
+    font-size: 7rem;
+  }
 }
 
 .section--main h2 {

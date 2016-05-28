@@ -5,13 +5,22 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 
  .section {
-   min-height: 85vh;
+   min-height: 55vh;
    display: flex;
    align-items: center;
    justify-content: center;
+   text-align: center;
+
+   @include bp-medium {
+     min-height: 85vh;
+     text-align: left;
+   }
 
    &__content {
-     padding: 0 5em;
+     padding: 3em 0;
+     @include bp-medium {
+       padding: 0 5em;
+     }
    }
 
    pre {
@@ -38,6 +47,10 @@
           background: #FDF9DE;
           top: 50%;
           margin-top: -4px;
+          display: none;
+          @include bp-medium {
+            display: inline-block;
+          }
         }
       }
    }
@@ -60,6 +73,10 @@
 
      h1 {
       font-family: 'caroselloregular', serif;
+      font-size: 4rem;
+      @include bp-medium {
+        font-size: 7rem;
+      }
      }
 
      h2 {
