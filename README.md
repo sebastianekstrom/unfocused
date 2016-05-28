@@ -11,7 +11,7 @@ You can see a demo of it over [here](https://sebastianekstrom.github.io/unfocuse
 
 Install the package
 ```
-npm install unfocused --save-dev
+npm install unfocused --save
 ```
 Implement it
 ```
