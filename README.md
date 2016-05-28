@@ -1,6 +1,7 @@
 # Unfocused
-
+![unfocused](https://cloud.githubusercontent.com/assets/1921046/15626977/3885c8e2-24d5-11e6-9b3b-61091a05c45e.gif)
 [Changelog](CHANGELOG.md)
+
 
 ## Installation
 
@@ -16,6 +17,11 @@ unfocused.init('I miss you <3')
 ```
 
 ## Browser support
+
+* Chrome
+* Firefox
+* Safari
+* IE10
 
 ## Development
 
