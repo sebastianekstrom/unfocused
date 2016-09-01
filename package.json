@@ -1,6 +1,6 @@
 {
   "name": "unfocused",
-  "version": "0.2.0",
+  "version": "0.1.2",
   "description": "Change your page title when the tab isnt focused",
   "main": "lib/index.js",
   "author": "Sebastian Ekström",
