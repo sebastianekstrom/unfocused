@@ -1,15 +1,19 @@
 {
   "name": "unfocused",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Change your page title when the tab isnt focused",
   "main": "lib/index.js",
   "author": "Sebastian Ekström",
   "license": "MIT",
   "devDependencies": {
-    "coffee-script": "~1.9.2"
+    "babel": "~6.5.2",
+    "babel-core": "~6.14.0",
+    "babel-loader": "~6.2.5",
+    "babel-preset-es2015": "~6.14.0",
+    "babel-preset-stage-2": "~6.13.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/sebastianekstrom/unfocused/issues"
   },
-  "homepage": "https://github.com/sebastianekstrom/unfocused#readme"
+  "homepage": "https://github.com/sebastianekstrom/unfocused"
 }

@@ -15,9 +15,8 @@ npm install unfocused --save
 ```
 Implement it
 ```
-import Unfocused from 'unfocused'
-const unfocused = new Unfocused()
-unfocused.init('I miss you <3')
+import Unfocused from "unfocused"
+Unfocused("This tab is not focused anymore!")
 ```
 
 ## Browser support
@@ -29,7 +28,7 @@ unfocused.init('I miss you <3')
 
 ## Development
 
-To compile or make changes to the source files, first install the dependencies with `make install`, after that you just run `make serve` and your good to go!
+To compile or make changes to the source files, first install the dependencies with `make install`, after that you just run `make build` and your good to go!
 
 ## Contributing
 

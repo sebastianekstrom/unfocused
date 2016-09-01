@@ -1,3 +1,7 @@
+### 0.2.0 2016-09-01
+* Rewrite in JS instead of Coffeescript
+* Add Babel
+
 ### 0.1.2 2016-05-28
 * Updated readme with browser support and demo page
 
