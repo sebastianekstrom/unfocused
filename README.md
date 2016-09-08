@@ -7,16 +7,16 @@ You can see a demo of it over [here](https://sebastianekstrom.github.io/unfocuse
 
 ![unfocused](https://cloud.githubusercontent.com/assets/1921046/15626977/3885c8e2-24d5-11e6-9b3b-61091a05c45e.gif)
 
-## Installation
+## Installation and usage
 
 Install the package
 ```
 npm install unfocused --save
 ```
 Implement it
-```
-import Unfocused from "unfocused"
-Unfocused("This tab is not focused anymore!")
+```javascript
+import Unfocused from 'unfocused'
+Unfocused('This tab is not focused anymore!')
 ```
 
 ## Browser support
