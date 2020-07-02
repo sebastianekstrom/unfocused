@@ -1,0 +1,22 @@
+{
+    "extends": [
+      "plugin:shopify/typescript",
+      "plugin:shopify/jest",
+      "plugin:shopify/prettier"
+    ],
+    "parserOptions": {
+      "project": "tsconfig.json"
+    },
+    "rules": {
+      "import/extensions": "off",
+      "node/no-extraneous-require": "off",
+      "import/no-cycle": "off",
+      "jest/require-tothrow-message": "off",
+      "callback-return": "off",
+      "jest/no-if": "off",
+      "import/named": "off",
+      "func-style": "off",
+      "react/display-name": "off",
+      "id-length": "off",
+    }
+  }
